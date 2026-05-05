@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompetEnzo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>CompetEnzo</h1>
+        <p>v1.0.0</p>
+        <p>Created by Tata</p>
+        <div class="loader">Caricamento audio...</div>
+    </div>
+
+    <!-- App Principale -->
+    <main id="app-content" class="hidden">
+        <div class="container">
+            <img src="img/enzo.png" id="person-img" alt="Enzo">
+            <h2 id="phrase-display">...</h2>
+            <button id="btn-action">Dì qualcosa</button>
+        </div>
+
+        <!-- Badge Suggerimenti -->
+        <div id="suggestion-badge" onclick="openSuggestion()">
+            Suggerisci 💡
+        </div>
+    </main>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
